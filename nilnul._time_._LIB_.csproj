@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Deterministic>false</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E0CC3C7-6F02-45FC-8BC1-83FFD9B8EBC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>nilnul.time</RootNamespace>
+    <AssemblyName>nilnul._time_._LIB_</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'hbue__deptS_ccpOrg|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\hbue__deptS_ccpOrg\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'hbue__deptS_ccpOrg___release|AnyCPU'">
+    <OutputPath>bin\hbue__deptS_ccpOrg___release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'test_release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\test_release\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'PreferChinese|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\PreferChinese\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release_PreferChinese|AnyCPU'">
+    <OutputPath>bin\Release_PreferChinese\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Hbue40|AnyCPU'">
+    <OutputPath>bin\Hbue40\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Symbols4Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Symbols4Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Symbol|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Symbol\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget|AnyCPU'">
+    <OutputPath>bin\Nuget\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <LangVersion>default</LangVersion>
+    <!--<LangVersion>latest</LangVersion>-->
+    <!--<LangVersion>preview</LangVersion>-->
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Nuget|AnyCPU'">
+    <OutputPath>bin\Nuget\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <!--<LangVersion>7.3</LangVersion>-->
+    <!--<LangVersion>default</LangVersion>-->
+    <LangVersion>latest</LangVersion>
+    <!--<LangVersion>preview</LangVersion>-->
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>t.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.collection_._discrete_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230">
+      <HintPath>..\..\(packages)\nilnul.collection_._discrete_._LIB_.1.1.220728.140313\lib\net48\nilnul.collection_._discrete_._LIB_.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nilnul.num._integer_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.num._integer_._LIB_.1.1.220905.105721\lib\net481\nilnul.num._integer_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._quotient_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.num._quotient_._LIB_.1.1.220926.131208\lib\net481\nilnul.num._quotient_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul.num._real_._LIB_, Version=2.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul.num._real_._LIB_.2.1.220818.53104\lib\net48\nilnul.num._real_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._bit_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._bit_._LIB_.1.1.220822.32314\lib\net48\nilnul._bit_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._character_._LIB_, Version=2.1.8272.35271, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._character_._LIB_.2.1.220825.113426\lib\net481\nilnul._character_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._num_._LIB_.1.1.220826.15831\lib\net481\nilnul._num_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._num_._LINQ_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._num_._LINQ_.1.1.220825.155237\lib\net481\nilnul._num_._LINQ_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._obj_._LIB_, Version=1.2.0.0, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._obj_._LIB_.1.2.220905.122106\lib\net481\nilnul._obj_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._rel_._LIB_, Version=1.2.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._rel_._LIB_.1.2.220817.152548\lib\net48\nilnul._rel_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._set_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._set_._LIB_.1.1.220905.140119\lib\net481\nilnul._set_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="nilnul._txt_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\nilnul._txt_._LIB_.1.1.220908.84230\lib\net481\nilnul._txt_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="_nilnul_._LIB_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\_nilnul_._LIB_.1.1.220819.143251\lib\net481\_nilnul_._LIB_.dll</HintPath>
+    </Reference>
+    <Reference Include="_nilnul_._LINQ_, Version=1.1.0.1, Culture=neutral, PublicKeyToken=085f320e4a727230, processorArchitecture=MSIL">
+      <HintPath>..\..\(packages)\_nilnul_._LINQ_.1.1.220819.143032\lib\net481\_nilnul_._LINQ_.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bound_\Closed.cs" />
+    <Compile Include="duration_\Days4dbl.cs" />
+    <Compile Include="duration_\Unit4dblDefault.cs" />
+    <Compile Include="duration_\Positive.cs" />
+    <Compile Include="duration_\Decanano4dbl.cs" />
+    <Compile Include="duration_\Seconds4dbl.cs" />
+    <Compile Include="duration_\Hours4dbl.cs" />
+    <Compile Include="duration_\Minutes.cs" />
+    <Compile Include="grad\deviation\Be.cs" />
+    <Compile Include="grad\deviation\be\Vow.cs" />
+    <Compile Include="grad\deviation\be\vow_\BeDefault.cs" />
+    <Compile Include="grad\deviation\be_\Nonneg.cs" />
+    <Compile Include="grad\deviation\be_\nonneg\Vow.cs" />
+    <Compile Include="grad\deviation\be_\nonneg\vow\Ee.cs" />
+    <Compile Include="grad\deviation\be_\Positive.cs" />
+    <Compile Include="grad\deviation\be_\positive\Vow.cs" />
+    <Compile Include="grad\deviation\be_\positive\vow\Ee.cs" />
+    <Compile Include="grad\deviation\Vow.cs" />
+    <Compile Include="grad\deviation\vow\Ee.cs" />
+    <Compile Include="grad\deviation\vow\ee_\VowDefault.cs" />
+    <Compile Include="grad\SignedMeasure.cs" />
+    <Compile Include="grad\deviation\phrase_\Verable.cs" />
+    <Compile Include="duration_\seconds1milli\phrase_\Verable.cs" />
+    <Compile Include="duration_\seconds1milli\phrase_\verable_\Mantissa.cs" />
+    <Compile Include="duration_\span\phrase_\verable_\Verable.cs" />
+    <Compile Include="duration_\span\phrase_\verable_\SubsecondsAsMantissa.cs" />
+    <Compile Include="Duration.cs" />
+    <Compile Include="IRange.cs" />
+    <Compile Include="ITend.cs" />
+    <Compile Include="nilnul0\_time\Clock.cs" />
+    <Compile Include="nilnul0\_time\ClockX.cs" />
+    <Compile Include="nilnul0\_time\clock\phrase_\ISexagesimal.cs" />
+    <Compile Include="nilnul0\_time\clock_\ITilMilli.cs" />
+    <Compile Include="nilnul0\_time\clock_\tilMilli\_PhraseX.cs" />
+    <Compile Include="nilnul0\_time\clock_\TimeSpanX.cs" />
+    <Compile Include="_lex_\phrase_\yr_\decimalSubsecond_\ISep.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\yr_\IFloated.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\yr_\ITillSeconds.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\span\phrase_\Verable.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\span\phrase_\verable_\MidNotation.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\At.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\co\be_\Contain.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\_co_\upper\Contain.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\_co_\lower\Contain.cs" />
+    <Compile Include="Lex.cs" />
+    <Compile Include="nilnul0\time_\datetime\Lex.cs" />
+    <Compile Include="nilnul0\time_\datetime\lex_\yr_\SevenSplit.cs" />
+    <Compile Include="nilnul0\time_\datetime\lex_\yr_\Full.cs" />
+    <Compile Include="nilnul0\time_\datetime\lex_\Yr.cs" />
+    <Compile Include="nilnul0\time_\datetime\lex_\YearLed.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\parse_\ParseI - Copy.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\PhraseI - Copy.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\DecimalSplit.cs" />
+    <Compile Include="nilnul0\time_\datetime\date\phrase_\Yr.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\IYrInTwoDigits.cs" />
+    <Compile Include="_lex_\phrase_\yr_\decimalSubsecond_\sep_\Underscore.cs" />
+    <Compile Include="_lex_\phrase_\yr_\decimalSubsecond_\NoSep.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\yr_\SevenSplit.cs" />
+    <Compile Include="_lex_\phrase_\yr_\DecimalSubsecond.cs" />
+    <Compile Include="_lex_\phrase_\yr_\decimalSubsecond_\sep_\Lower.cs" />
+    <Compile Include="_lex_\phrase_\yr_\decimalSubsecond_\sep_\Upper.cs" />
+    <Compile Include="nilnul0\time_\datetime\split\phrase_\SevenDigits.cs" />
+    <Compile Include="nilnul0\time_\datetime\split\phrase_\TrimEnd.cs" />
+    <Compile Include="nilnul0\time_\datetime\tilSeconds\phrase_\yr_\NoSep.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\_phrase_\OfOffset.cs" />
+    <Compile Include="nilnul0\time_\Zoned.cs" />
+    <Compile Include="nilnul0\time_\zoned\phrase_\Nn.cs" />
+    <Compile Include="nilnul0\_time\IClock.cs" />
+    <Compile Include="nilnul0\_time\clock\_phrase\SplitSecond.cs" />
+    <Compile Include="nilnul0\_time\clock_\RealPrecision.cs" />
+    <Compile Include="nilnul0\_time\clock_\Hhmmsses.cs" />
+    <Compile Include="nilnul0\_time\_clock\Deviation.cs" />
+    <Compile Include="nilnul0\_time\_clock\Measure.cs" />
+    <Compile Include="nilnul0\_time\_clock\deviate_\_MinuteX.cs" />
+    <Compile Include="nilnul0\_time\_clock\deviate_\_HourX.cs" />
+    <Compile Include="nilnul0\_time\_clock\deviate_\_DayX.cs" />
+    <Compile Include="nilnul0\_time\_clock\_measure\Unit.cs" />
+    <Compile Include="nilnul0\_time\_clock\_measure\unit_\Day.cs" />
+    <Compile Include="nilnul0\_time\_clock\_measure\unit_\Hour.cs" />
+    <Compile Include="nilnul0\_time\_clock\_measure\unit_\Tick4dotnet.cs" />
+    <Compile Include="nilnul0\_time\_clock\_measure\unit_\Nano.cs" />
+    <Compile Include="nilnul0\_time\_clock\_measure\unit_\Micro.cs" />
+    <Compile Include="nilnul0\_time\_clock\_measure\unit_\Milli.cs" />
+    <Compile Include="nilnul0\_time\_clock\_measure\unit_\Minute.cs" />
+    <Compile Include="nilnul0\_time\_clock\deviate_\_TimeSpanX.cs" />
+    <Compile Include="nilnul0\_time\date_\Based.cs" />
+    <Compile Include="nilnul0\_time\date_\_calendared\calendar_\%28retiring\ChineseCalendarUtilities.cs" />
+    <Compile Include="nilnul0\_time\date_\_calendared\calendar_\ChineseCalendarUtilities - 复制.cs" />
+    <Compile Include="nilnul0\_time\date_\_calendared\calendar_\ChineseCalendarUtilities.cs" />
+    <Compile Include="nilnul0\_time\Date.cs" />
+    <Compile Include="nilnul0\_time\date\Parse.cs" />
+    <Compile Include="nilnul0\_time\_date\Month.cs" />
+    <Compile Include="nilnul0\_time\_date\year_\MinguoTime - Copy.cs" />
+    <Compile Include="nilnul0\_time\_date\year_\MinguoTime.cs" />
+    <Compile Include="frequency\Hz.cs" />
+    <Compile Include="name_\YearMonth.cs" />
+    <Compile Include="nilnul0\time_\datetime\bound_\day\PhraseI.cs" />
+    <Compile Include="nilnul0\time_\datetime\bound_\day\phrase_\seP_\hyphen_\YyyyMmDd.cs" />
+    <Compile Include="nilnul0\time_\datetime\CompI.cs" />
+    <Compile Include="nilnul0\time_\datetime\Dif.cs" />
+    <Compile Include="nilnul0\time_\datetime\Duration.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\ParseI.cs" />
+    <Compile Include="nilnul0\time_\datetime\date\phrase_\ymd_\Dotted.cs" />
+    <Compile Include="nilnul0\time_\datetime\date\phrase_\ymd_\Hyphened.cs" />
+    <Compile Include="nilnul0\time_\datetime\date\phrase_\yr_\YrMmDd.cs" />
+    <Compile Include="nilnul0\time_\datetime\tilSeconds\phrase_\Yy2ss.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\DdHhMmSs.cs" />
+    <Compile Include="nilnul0\time_\datetime\clock\phrase_\HhMmSs.cs" />
+    <Compile Include="nilnul0\time_\datetime\clock\phrase_\HhMm.cs" />
+    <Compile Include="nilnul0\time_\datetime_\Txt.cs" />
+    <Compile Include="nilnul0\time_\datetime_\txt_\Full.cs" />
+    <Compile Include="nilnul0\time_\datetime_\txt\_ParseX.cs" />
+    <Compile Include="nilnul0\time_\datetime_\txt_\_FullX.cs" />
+    <Compile Include="nilnul0\time_\datetime_\zoned\phrase_\NilNul.cs" />
+    <Compile Include="nilnul0\TimeI.cs" />
+    <Compile Include="comparer\Interval2%28byCollection.Interval.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\yr_\full_\Full.cs" />
+    <Compile Include="_lex_\phrase_\yr_\decimalSubsecond_\sep_\upper_\NewFolder1\SplitSecond.cs" />
+    <Compile Include="Seg.cs" />
+    <Compile Include="tend\Measure.cs" />
+    <Compile Include="tend\_measure\Unit4dblI.cs" />
+    <Compile Include="tend\_measure\unit_\Day - Copy.cs" />
+    <Compile Include="tend\_measure\unit_\Hour - Copy.cs" />
+    <Compile Include="tend\_measure\unit_\Micro4dbl.cs" />
+    <Compile Include="tend\_measure\unit_\Milli4dbl.cs" />
+    <Compile Include="tend\_measure\unit_\DecaNano.cs" />
+    <Compile Include="tend\_measure\unit_\Second4dbl.cs" />
+    <Compile Include="tend\_measure\unit_\Minute4dbl.cs" />
+    <Compile Include="tend\_measure\unit_\Nano - Copy.cs" />
+    <Compile Include="tend\_measure\_unit_\AsSeconds4dbl.cs" />
+    <Compile Include="seg_\Hour.cs" />
+    <Compile Include="seg_\Day.cs" />
+    <Compile Include="seg_\NanoSecond.cs" />
+    <Compile Include="comparer\LessThanOrEqualTo.cs" />
+    <Compile Include="comparer\Comparer.cs" />
+    <Compile Include="nilnul0\time_\datetime\Bound.cs" />
+    <Compile Include="nilnul0\time_\datetime\bound_\closed_\Day2DayBothIncluded.cs" />
+    <Compile Include="nilnul0\time_\datetime\bound_\DayI.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\PhraseI.cs" />
+    <Compile Include="nilnul0\time_\datetime\_lex_\phrase_\yr_\Full.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="grad\deviation_\Span.cs" />
+    <Compile Include="seg_\offset\to_\Txt.cs" />
+    <Compile Include="src_\TimeapiOrg.cs" />
+    <Compile Include="nilnul0\Time.cs" />
+    <Compile Include="GradI.cs" />
+    <Compile Include="grad_\StepI.cs" />
+    <Compile Include="ToI.cs" />
+    <Compile Include="nilnul0\time_\datetime\tilSeconds\phrase_\TilSecond.cs" />
+    <Compile Include="nilnul0\time_\datetime\tilSeconds\phrase_\Iso.cs" />
+    <Compile Include="_lex_\Parse.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone\Summer.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\Beijing.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\eg\Atlanta.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\eg\UsaMiddle.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\eg\UsaEast.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\eg\Kst.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\eg\Beijing.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\eg\Edt.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\_zoneS\Beijing.cs" />
+    <Compile Include="nilnul0\time_\datetime\Border.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\Co.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\co\BeI.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\co\be_\Closed_SeededUnknown.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\co\be_\Seeded.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\co\be_\seeded\Vow.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\co\be_\seeded\vow\Ed.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\co\be_\Spanned.cs" />
+    <Compile Include="nilnul0\time_\datetime\border\co\be_\Single.cs" />
+    <Compile Include="tend\_measure\UnitI.cs" />
+    <Compile Include="tend\_measure\unit_\Nano.cs" />
+    <Compile Include="tend\_measure\unit_\Milli.cs" />
+    <Compile Include="tend\_measure\unit_\Minute.cs" />
+    <Compile Include="tend\_measure\unit_\Hour.cs" />
+    <Compile Include="tend\_measure\unit_\Day.cs" />
+    <Compile Include="tend\_measure\_unit_\AsSeconds.cs" />
+    <Compile Include="nilnul0\time_\_zoned\_zone\DaylightSaving.cs" />
+    <Compile Include="nilnul0\time_\_zoned\_zone\_daylightSaving\_transitionS\Usa.cs" />
+    <Compile Include="nilnul0\time_\_zoned\zone_\_zoneS\Pacific.cs" />
+    <Compile Include="_lex_\phrase_\IYrInTwoDigits.cs" />
+    <Compile Include="_lex_\phrase_\yr_\seP_\Underscore.cs" />
+    <Compile Include="_phrase_\DateClockSep.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bound\" />
+    <Folder Include="bound_\closed_\" />
+    <Folder Include="bound_\day\" />
+    <Folder Include="comparer\interval\" />
+    <Folder Include="comparer~\" />
+    <Folder Include="duration\" />
+    <Folder Include="duration_\decanano\" />
+    <Folder Include="grad\deviation_\NewFolder1\" />
+    <Folder Include="nilnul0\time_\datetime\border\be_\" />
+    <Folder Include="nilnul0\time_\datetime\bound_\day\NewFolder1\" />
+    <Folder Include="nilnul0\time_\datetime\bound_\day\phrase_\ordeR_\ymd_\seP_\" />
+    <Folder Include="nilnul0\time_\datetime\bound_\_day_\" />
+    <Folder Include="nilnul0\time_\datetime\length\" />
+    <Folder Include="nilnul0\time_\datetime\tilSeconds\phrase_\yr_\noSep\" />
+    <Folder Include="nilnul0\time_\datetime\_lex_\phrase_\yr_\decimalSplit\" />
+    <Folder Include="nilnul0\time_\minguo\" />
+    <Folder Include="nilnul0\time_\_dayInYr\" />
+    <Folder Include="nilnul0\time_\_zoned\zone_\eg\Us\" />
+    <Folder Include="nilnul0\_time\clock_\realPrecision\" />
+    <Folder Include="nilnul0\_time\date\parse_\" />
+    <Folder Include="nilnul0\_time\date_\based\" />
+    <Folder Include="nilnul0\_time\date_\calendared_\" />
+    <Folder Include="nilnul0\_time\date_\_calendared\calendar_\cnLunar\" />
+    <Folder Include="nilnul0\_time\_clock\deviate_\hour\" />
+    <Folder Include="nilnul0\_time\_clock\deviate_\minute\" />
+    <Folder Include="nilnul0\_time\_clock\deviate_\second\" />
+    <Folder Include="nilnul0\_time\_clock\deviate_\split\" />
+    <Folder Include="nilnul0\_time\_clock\measure_\" />
+    <Folder Include="nilnul0\_time\_date\day\" />
+    <Folder Include="nilnul0\_time_\" />
+    <Folder Include="op_\unary_\" />
+    <Folder Include="phrase_\" />
+    <Folder Include="tend\_measure\unit_\unit~\" />
+    <Folder Include="_period\" />
+    <Folder Include="_period_\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PostBuildMacros">
+    <GetAssemblyIdentity AssemblyFiles="$(TargetPath)">
+      <Output TaskParameter="Assemblies" ItemName="Targets" />
+    </GetAssemblyIdentity>
+    <ItemGroup>
+      <VersionNumber Include="@(Targets->'%(Version)')" />
+      <MajorMinor Include="$([System.Text.RegularExpressions.Regex]::Replace(&quot;%(Targets.Version)&quot;, &quot;^([^\.]+)\.([^\.]+)(.*)$&quot;, &quot;$1.$2&quot;))" />
+    </ItemGroup>
+  </Target>
+  <PropertyGroup>
+    <nilnulTime>$([System.DateTime]::UtcNow.ToString("yyMMddHHmmss"))</nilnulTime>
+    <nilnulPattern4date>^.{6}</nilnulPattern4date>
+    <nilnulDate>$([System.Text.RegularExpressions.Regex]::Match($(nilnulTime), $(nilnulPattern4date)))</nilnulDate>
+    <nilnulPattern4clock>.{6}$</nilnulPattern4clock>
+    <nilnulClock>$([System.Text.RegularExpressions.Regex]::Match($(nilnulTime), $(nilnulPattern4clock)))</nilnulClock>
+    <nilnulClockCollapsed>$(nilnulClock.TrimStart('0'))</nilnulClockCollapsed>
+    <_nilnulClockPrefixed>.$(nilnulClockCollapsed)</_nilnulClockPrefixed>
+    <nilnulClockPrefixed>$(_nilnulClockPrefixed.TrimEnd('.'))</nilnulClockPrefixed>
+    <nilnulPatchRevision>$(nilnulDate)$(nilnulClockPrefixed)</nilnulPatchRevision>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEventDependsOn>
+	$(PostBuildEventDependsOn);
+	PostBuildMacros;
+</PostBuildEventDependsOn>
+    <PostBuildEvent>echo ConfigurationName is $(ConfigurationName)
+if $(ConfigurationName) == Release (
+	"NuGet.exe" pack "$(ProjectPath)" -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+	"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source local
+	"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source my
+) ELSE (
+	if  $(ConfigurationName)==Symbol (
+		"NuGet.exe" pack "$(ProjectPath)" -Symbols -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).symbols.nupkg -SkipDuplicate -Source local
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).symbols.nupkg -SkipDuplicate -Source my
+	)
+	if  $(ConfigurationName)==Nuget (
+		"NuGet.exe" pack "$(ProjectPath)"  -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision).nupkg -SkipDuplicate -Source nuget.org
+	)
+	if  $(ConfigurationName)==Dev2nuget (
+		"NuGet.exe" pack "$(ProjectPath)"  -Prop Configuration=$(ConfigurationName) -Exclude **/*.tt -Version @(MajorMinor).$(nilnulPatchRevision)-dev
+		"NuGet.exe" push $(TargetName).@(MajorMinor).$(nilnulPatchRevision)-dev.nupkg -SkipDuplicate -Source nuget.org
+	)
+)</PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <Import Project="..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\..\(packages)\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <Import Project="..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\(packages)\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
