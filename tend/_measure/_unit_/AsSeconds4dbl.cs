@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace nilnul.time.seg._measure._unit_
+namespace nilnul.time.tend._measure._unit_
 {
 	public interface AsSeconds4DblI
 		:

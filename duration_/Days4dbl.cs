@@ -1,5 +1,5 @@
 ﻿using nilnul.num.real_;
-using nilnul.time.seg._measure.unit_;
+using nilnul.time.tend._measure.unit_;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace nilnul.time.duration_
 {
 	public class Days4dbl
 		:
-		Duration4dbl<seg._measure.unit_.Day4dbl>
+		Duration4dbl<tend._measure.unit_.Day4dbl>
 	{
 		public Days4dbl(NonnegOfDoubleI amount) : base(amount, Day4dbl.Singleton )
 		{

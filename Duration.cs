@@ -1,5 +1,5 @@
-﻿using nilnul.num.real_;
-using nilnul.time.seg._measure;
+using nilnul.num.real_;
+using nilnul.time.tend._measure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,18 +8,11 @@ using System.Threading.Tasks;
 
 namespace nilnul.time
 {
-	/// <summary>
-	/// how long is the time. This is a nonneg value in line with nilnul.geometry.linear
-	/// </summary>
-	public interface IDuration : seg.IMeasure
-	{
-
-	}
 
 	public interface Duration4dblI<T>
 		:
 		nilnul.obj.Measure4dblI<T>
-		where T : seg._measure.Unit4dblI
+		where T : tend._measure.Unit4dblI
 
 	{
 
@@ -39,7 +32,7 @@ namespace nilnul.time
 		Duration4dblI<T>
 		,
 		IDuration
-		where T : seg._measure.Unit4dblI
+		where T : tend._measure.Unit4dblI
 	{
 		public Duration4dbl(NonnegOfDoubleI amount, T unit) : base(amount, unit)
 		{
@@ -55,7 +48,7 @@ namespace nilnul.time
 
 	}
 	public class Duration4dbl
-		: Duration4dbl<seg._measure.Unit4dblI>
+		: Duration4dbl<tend._measure.Unit4dblI>
 		,
 		Duration4dblI
 	{
@@ -71,7 +64,7 @@ namespace nilnul.time
 		{
 		}
 		public Duration4dbl(double x) : this(
-			x, seg._measure.Unit4dbl.Singleton
+			x, tend._measure.Unit4dbl.Singleton
 		)
 		{
 

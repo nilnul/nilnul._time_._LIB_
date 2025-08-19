@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using nilnul.num;
 
-namespace nilnul.time.seg._measure.unit_
+namespace nilnul.time.tend._measure.unit_
 {
 	public class Micro4dbl :
 		Unit4dbl

@@ -1,5 +1,5 @@
 ﻿using nilnul.num.real_;
-using nilnul.time.seg._measure;
+using nilnul.time.tend._measure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +17,7 @@ namespace nilnul.time.duration_
 		Duration4dblI<T>
 		,
 		IDuration
-		where T : seg._measure.Unit4dblI,new()
+		where T : tend._measure.Unit4dblI,new()
 	{
 		public Unit4dblDefault(NonnegOfDoubleI amount)
 			:

@@ -7,7 +7,7 @@ using nilnul.num;
 using nilnul.num.real_;
 using nilnul.obj._measure._unit_;
 
-namespace nilnul.time.seg._measure.unit_
+namespace nilnul.time.tend._measure.unit_
 {
 	public class Day :
 

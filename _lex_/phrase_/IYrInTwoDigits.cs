@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +10,7 @@ namespace nilnul.time_._lex_.phrase_
 	/// year in two digits, such as 22, NOT in four digits as 2022.
 	/// </summary>
 	/// <remarks>
-	/// as we are dealing with time, not datetime,  the frational seconds is in arbitrary precision. We need mantissa after decimal point.
+	/// as we are dealing with time, not datetime,  the fractional seconds is in arbitrary precision. We need mantissa after decimal point.
 	/// </remarks>
 	public interface IYrInTwoDigits
 	{

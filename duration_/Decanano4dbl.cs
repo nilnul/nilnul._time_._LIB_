@@ -1,5 +1,5 @@
-﻿using nilnul.num.real_;
-using nilnul.time.seg._measure.unit_;
+using nilnul.num.real_;
+using nilnul.time.tend._measure.unit_;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,9 +11,11 @@ namespace nilnul.time.duration_
 	/// <summary>
 	/// ticks
 	/// </summary>
+	/// alias:
+	///		decaNano of nano
 	public class Decanano4dbl
 		:
-		Unit4dblDefault<seg._measure.unit_.DecaNano4Dbl>
+		Unit4dblDefault<tend._measure.unit_.DecaNano4Dbl>
 	{
 		public Decanano4dbl(NonnegOfDoubleI amount) : base(amount )
 		{

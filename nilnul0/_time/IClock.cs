@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +18,15 @@ namespace nilnul._time
 	/// <remarks>
 	///		<seealso cref="Instant,Duration"/>
 	/// </remarks>
-	interface  IClock
+	/// alias:
+	///		dial
+	///			as in sundial
+	///		clock
+	///		timeonly
+	///		clock only
+	///		钟点、时钟
+	///			,时钟、分钟、秒钟
+	public interface  IClock
 	{
 	}
 

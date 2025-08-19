@@ -9,6 +9,10 @@ namespace nilnul.time_
 	/// <summary>
 	/// a time at a timezone. <see cref="nameof(DateTimeOffset)"/>
 	/// </summary>
+	/// alias:
+	///		offset
+	///		zoned
+	///	
 	interface IZoned
 	{
 	}

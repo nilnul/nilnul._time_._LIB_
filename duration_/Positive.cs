@@ -1,5 +1,5 @@
 ﻿using nilnul.num.real_;
-using nilnul.time.seg._measure.unit_;
+using nilnul.time.tend._measure.unit_;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace nilnul.time.duration_
 {
 	public class Positive4dbl<T>
 		: Duration4dbl<T>
-		where T : seg._measure.Unit4dblI
+		where T : tend._measure.Unit4dblI
 
 	{
 		
@@ -30,7 +30,7 @@ namespace nilnul.time.duration_
 
 	}
 
-	public class Positive4dbl : Positive4dbl<seg._measure.unit_.Second4dbl>
+	public class Positive4dbl : Positive4dbl<tend._measure.unit_.Second4dbl>
 	{
 		public Positive4dbl(PositiveDblI amount) : base(amount, Second4dbl.Singleton)
 		{

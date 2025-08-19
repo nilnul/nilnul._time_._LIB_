@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using nilnul.num;
 using nilnul.num.real_;
 
-namespace nilnul.time.seg._measure
+namespace nilnul.time.tend._measure
 {
 	public interface IUnit :
 		nilnul.obj._measure.IUnit

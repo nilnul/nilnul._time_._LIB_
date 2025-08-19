@@ -16,7 +16,7 @@ namespace nilnul.time
 	///		step
 	///		
 	/// </remarks>
-	public interface IGrad {
+	public interface IGrad:betwixt_.IClosed {
 
 	}
 

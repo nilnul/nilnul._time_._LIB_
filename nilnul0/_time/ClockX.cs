@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace nilnul._time
 {
@@ -18,10 +18,23 @@ namespace nilnul._time
 		/// <param name="minutes"></param>
 		/// <param name="seconds"></param>
 		/// <returns></returns>
-		static public TimeSpan Span(int hours, int minutes, int seconds) {
+		static public TimeSpan Span(int hours, int minutes=0, int seconds=0) {
 
 			return new TimeSpan(hours, minutes, seconds);
 		}
+		static public TimeSpan OfHoursMinutes(int hours, int minutes=0) {
+
+			return new TimeSpan(hours, minutes, 0);
+		}
+
+		//static public TimeSpan OfHours(int hours) {
+
+		//	return  TimeSpan.FromHours(hours);
+		//}
+
+
+
+
 	}
 
 }

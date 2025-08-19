@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using nilnul.num;
 using nilnul.num.real_;
 
-namespace nilnul.time.seg._measure.unit_
+namespace nilnul.time.tend._measure.unit_
 {
 	/// <summary>
 	/// one tick is equial to 100 nano

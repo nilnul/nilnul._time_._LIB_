@@ -11,4 +11,19 @@ namespace nilnul.time_.datetime
 		nilnul.obj.LexI<DateTime>
 	{
 	}
+
+	public abstract class LexA:LexI {
+		public abstract DateTime parse(string x);
+
+		public string phrase(DateTimeOffset datetime)
+		{
+			return phrase(datetime.ToUniversalTime().DateTime);
+		}
+		public string phrase()
+		{
+			return phrase(DateTime.UtcNow);
+		}
+
+		public abstract string phrase(DateTime obj);
+	}
 }

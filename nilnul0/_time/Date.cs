@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace nilnul.time
+namespace nilnul._time
 {
-	public partial class Date
+
+	public  class Date
 	{
+
+
 		static public string ToStr(
 			DateTime time
 			,
-			string seperator=""
+			string seperator="" //between date and clock
 			,
 			bool yearInTwoDigitsOrFour=true
 			

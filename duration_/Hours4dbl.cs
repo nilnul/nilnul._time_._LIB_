@@ -1,5 +1,6 @@
-﻿using nilnul.num.real_;
-using nilnul.time.seg._measure.unit_;
+using nilnul.num.real_;
+using nilnul.time.set;
+using nilnul.time.tend._measure.unit_;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace nilnul.time.duration_
 {
 	public class Hours4dbl
 		:
-		Duration4dbl<seg._measure.unit_.Hour4dbl>
+		Duration4dbl<tend._measure.unit_.Hour4dbl>
 	{
 		public Hours4dbl(NonnegOfDoubleI amount) : base(amount, Hour4dbl.Singleton )
 		{
@@ -25,7 +26,7 @@ namespace nilnul.time.duration_
 		}
 
 		static public Hours4dbl Of<T>(Duration4dblI<T> x)
-			where T : seg._measure.Unit4dblI
+			where T : tend._measure.Unit4dblI
 
 
 		{
@@ -34,7 +35,7 @@ namespace nilnul.time.duration_
 			{
 				 Hours4dbl a=> a
 				 ,
-				 var y when y.unit is seg._measure.unit_.Hour4dbl => new  Hours4dbl(y.amount)
+				 var y when y.unit is tend._measure.unit_.Hour4dbl => new  Hours4dbl(y.amount)
 				 ,
 				 _=> new Hours4dbl(
 					 x.amount.realee.ee * x.unit.magnitude.dblen.ee
