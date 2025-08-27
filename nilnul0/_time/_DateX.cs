@@ -6,11 +6,18 @@ using System.Text;
 namespace nilnul._time
 {
 
-	public  class Date
+	static public  class _DateX
 	{
 
 
-		static public string ToStr(
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="time"></param>
+		/// <param name="seperator"></param>
+		/// <param name="yearInTwoDigitsOrFour"></param>
+		/// <returns></returns>
+		static public string Txten(
 			DateTime time
 			,
 			string seperator="" //between date and clock

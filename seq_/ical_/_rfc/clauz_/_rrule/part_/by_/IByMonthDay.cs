@@ -6,9 +6,4 @@ namespace nilnul.time.seq_.ical_._rfc.clauz_._rrule.part_
 	///		ByMonthDay=-1
 	/// </summary>
 	interface IByMonthDay { }
-
-	static public class _ByMonthDayX
-	{
-		public const string KEY = "BYMONTHDAY";
-	}
 }

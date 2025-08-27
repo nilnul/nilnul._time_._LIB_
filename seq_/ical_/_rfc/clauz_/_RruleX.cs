@@ -74,6 +74,13 @@ namespace nilnul.time.seq_.ical_._rfc.clauz_
 			return nilnul.obj.duo.Phrase.Unison.phrase(KEY, parts);
 		}
 
+		/// <summary>
+		/// 
+		/// </summary>
+		/// <param name="parts">
+		/// <see cref="nilnul.obj.IAttr"/>s
+		/// </param>
+		/// <returns></returns>
 		static public string OfParts(IEnumerable<string> parts) {
 			return OfTgt(
 				_rrule.parts._TexfyX._Texfy_0parts(parts)
